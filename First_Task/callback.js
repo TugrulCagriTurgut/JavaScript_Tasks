@@ -1,6 +1,27 @@
-function plakaOku(){
-    setTimeout(function(){
+plakaOku(plakaKontrol);
+
+function plakaOku(ikinciIslem) {
+    setTimeout(function() {
         console.log('plaka okundu');
-    },5000);
+        ikinciIslem();
+    }, 1000);
+    
 }
-console.log("denemee")
+
+
+function plakaKontrol() {
+    setTimeout(function(){
+        console.log('plaka kontrol edildi');
+    }, 500);
+    
+}
+
+/* function gecisSerbest() {
+    setTimeout(() =>{
+        console.log('Gecebilirsiniz');
+    }, 1000);
+}
+*/
+
+
+    
